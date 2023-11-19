@@ -2,5 +2,17 @@
     "name": "skncode",
     "description": "Code for all skincare and beauty",
     "version": "0.0.1",
-    "manifest": 3
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+    "host_permissions": ["https://api.com/*", "https://*/"],
+    "manifest_version": 3,
+    "background": {
+        "scripts": ["popup.js"]
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "icon.png"
+    }
 }
